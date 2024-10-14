@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Bolivia - Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#redes">Redes Sociales</a></li>
+            </ul>
+        </nav>
+        <img src="{{ url_for('static', filename='img/logo1.jpg') }}" alt="Logotipo Café Bolivia">
+    </header>
+
+    <main>
+        <section id="descripcion">
+            <h1>Bienvenidos a Café Bolivia</h1>
+            <p>En Café Bolivia, ofrecemos el mejor café orgánico cultivado en las tierras altas de Bolivia. Nuestro café es de la más alta calidad, seleccionado a mano y procesado con los más altos estándares de sostenibilidad.</p>
+        </section>
+
+        <section id="ventajas">
+            <h2>¿Por qué elegir Café Bolivia?</h2>
+            <ul>
+                <li>Café orgánico 100% puro</li>
+                <li>Sostenible y de comercio justo</li>
+                <li>Apoyamos a los agricultores locales</li>
+                <li>Envío rápido y seguro a toda Bolivia</li>
+            </ul>
+            <button onclick="location.href='/comprar'">Comprar Ahora</button>
+        </section>
+
+        <section id="testimonios">
+            <h2>Testimonios de nuestros clientes</h2>
+            <blockquote>
+                "El mejor café que he probado. Su sabor es único y su aroma inigualable." - Juan Pérez
+            </blockquote>
+            <blockquote>
+                "Me encanta que apoyen a los agricultores locales mientras ofrecen un producto de calidad." - María Flores
+            </blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <section id="redes">
+            <h2>Síguenos en nuestras redes sociales</h2>
+            <a href="https://facebook.com">Facebook</a> |
+            <a href="https://instagram.com">Instagram</a> |
+            <a href="https://twitter.com">Twitter</a>
+        </section>
+
+        <p>&copy; 2024 Café Bolivia. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
