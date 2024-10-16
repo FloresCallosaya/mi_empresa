@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente para todo el documento */
+    margin: 0;                      /* Elimina márgenes del body */
+    padding: 0;                     /* Elimina padding del body */
+    background-color: #ffffff;      /* Color de fondo */
+}
+
+h1 {
+    text-align: center;             /* Alinea el título al centro */
+    margin-top: 20px;               /* Margen superior */
+}
+
+.contenedor {
+    display: flex;                  /* Usar flexbox para el diseño */
+    justify-content: space-between; /* Espacio entre la imagen y la descripción */
+    max-width: 1200px;             /* Ancho máximo del contenedor */
+    margin: 20px auto;             /* Centrar el contenedor en la página */
+}
+
+.imagen-principal {
+    
+        max-width: 80%;                 /* Limita el ancho de la imagen al 45% del contenedor */
+        height: auto;                   /* Mantiene la proporción */
+        display: block;                 /* Asegura que la imagen esté en su propia línea */
+        margin-right: 60px;            /* Espacio a la derecha de la imagen */
+        border: 5px solid rgba(56, 56, 56, 0.7); /* Borde verde fosforescente */
+        box-shadow: 0 0 15px rgba(14, 13, 13, 0.7); /* Sombra verde que imita un brillo */
+        border-radius: 100px;            /* Bordes redondeados para la imagen */
+    
+}
+
+#descripcion {
+    background-color: #413b3b;      /* Color de fondo blanco */
+    padding: 20px;                  /* Espaciado interno */
+    border-radius: 8px;             /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(177, 133, 133, 0.1); /* Sombra sutil */
+    flex: 1;                        /* Permite que la sección de descripción ocupe el espacio restante */
+}
+
+#descripcion h2, #descripcion h3 {
+    color: #ffffff;                 /* Color del texto */
+}
+
+#descripcion p, #descripcion li {
+    color: #8f8f8f;                    /* Color del texto */
+    line-height: 2.1;               /* Altura de línea */
+}
+
+#descripcion ul {
+    list-style-type: disc;          /* Estilo de viñetas */
+    margin-left: 20px;              /* Espacio a la izquierda */
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - Ramses</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+    <style>
+        /* Ajustes para las noticias */
+        #noticias {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .noticia {
+            max-width: 300px;
+            text-align: center;
+        }
+        .noticia img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                <li><a href="{{ url_for('quienes') }}">Quiénes Somos</a></li>
+                <li><a href="{{ url_for('servicios') }}">Servicios</a></li>
+                <li><a href="{{ url_for('noticias') }}">Noticias</a></li>
+                <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="noticias">
+        <h1>Noticias</h1>
+        <div class="noticia">
+            <img src="{{ url_for('static', filename='img/marmo1.jpg') }}" alt="Lápida de mármol">
+            <h3>Nuevos diseños de lápidas en mármol</h3>
+            <p>Presentamos nuestros últimos modelos en mármol, trabajados con precisión y elegancia.</p>
+        </div>
+        <div class="noticia">
+            <img src="{{ url_for('static', filename='img/granito.jpg') }}" alt="Lápida de granito">
+            <h3>Granito de alta calidad</h3>
+            <p>Incorporamos nuevos tipos de granito para lápidas duraderas y resistentes al tiempo.</p>
+        </div>
+        <div class="noticia">
+            <img src="{{ url_for('static', filename='img/fabr.jpg') }}" alt="Proceso de fabricación">
+            <h3>Proceso de fabricación</h3>
+            <p>Descubre cómo trabajamos el mármol y granito en nuestras instalaciones para obtener el mejor resultado.</p>
+        </div>
+    </section>
+</body>
+</html>

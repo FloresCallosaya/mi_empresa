@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flores - Servicios</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}" type="icono/webp">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+    <script src="https://kit.fontawesome.com/7670872ab2.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo Ramses" class="logo">
+            <h3>Flores</h3>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                <li><a href="{{ url_for('quienes') }}">QUIÉNES SOMOS</a></li>
+                <li><a href="{{ url_for('servicios') }}">SERVICIOS</a></li>
+                <li><a href="{{ url_for('noticias') }}">NOTICIAS</a></li>
+                <li><a href="{{ url_for('contacto') }}">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="servicios">
+        <h1>Nuestros Servicios</h1>
+        <div class="servicio">
+            <h2>Fabricación de lápidas en mármol y granito</h2>
+            <p>Ofrecemos servicios de alta calidad en la fabricación de lápidas y monumentos, utilizando los mejores materiales como mármol y granito, adaptados a las necesidades y preferencias de nuestros clientes.</p>
+        </div>
+        <div class="servicio">
+            <h2>Grabados personalizados</h2>
+            <p>Contamos con tecnología avanzada para realizar grabados personalizados en lápidas, incluyendo nombres, fechas, y dedicatorias especiales.</p>
+        </div>
+    </section>
+
+    <footer>
+        <section id="redes">
+            <h2>Síguenos en nuestras redes sociales</h2>
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i> Facebook</a> |
+            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i> Instagram</a> |
+            <a href="https://twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+        </section>
+
+        <p>&copy; RAMSES - Todos los derechos reservados. </p>
+        <p>Dirección: Av. Bueno Aires</p>
+        <p>Calle Bautista Sabedra 2024<br>
+        Nuestra Señora de La Paz<br>
+        Bolivia - 2024</p>
+    </footer>
+</body>
+</html>

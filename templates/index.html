@@ -3,59 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Bolivia - Inicio</title>
+    <title>FLORES FLORES</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}" type="icono/webp">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estiloindex.css') }}">
+    <script src="https://kit.fontawesome.com/7670872ab2.js" crossorigin="anonymous"></script> 
 </head>
 <body>
     <header>
         <nav>
+            <img src="{{ url_for('static', filename='img/logo.png') }}" >
+            <h3>FLORES</h3>
             <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#redes">Redes Sociales</a></li>
+                <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                <li><a href="{{ url_for('quienes') }}">QUIENES SOMOS</a></li>
+                <li><a href="{{ url_for('servicios') }}">SERVICIOS</a></li>
+                <li><a href="{{ url_for('noticias') }}">NOTICIAS</a></li>
+                <li><a href="{{ url_for('contacto') }}">CONTACTO</a></li>
             </ul>
         </nav>
-        <img src="{{ url_for('static', filename='img/logo1.jpg') }}" alt="Logotipo Café Bolivia">
     </header>
+    <h1>INDEX</h1>
+    
+    <div class="contenedor">
+        <img src="{{ url_for('static', filename='img/111.jpg') }}" alt="Imagen Principal" class="imagen-principal">
 
-    <main>
         <section id="descripcion">
-            <h1>Bienvenidos a Café Bolivia</h1>
-            <p>En Café Bolivia, ofrecemos el mejor café orgánico cultivado en las tierras altas de Bolivia. Nuestro café es de la más alta calidad, seleccionado a mano y procesado con los más altos estándares de sostenibilidad.</p>
-        </section>
-
-        <section id="ventajas">
-            <h2>¿Por qué elegir Café Bolivia?</h2>
+            <h2>Descripción de la Empresa</h2>
+            <p>En <strong>RAMSES</strong>, nos especializamos en la fabricación de lápidas y monumentos con los más altos estándares de calidad. Utilizamos materiales como mármol, granito y arenisca, proporcionando productos duraderos y estéticamente agradables que honran la memoria de los seres queridos.</p>
+            
+            <h3>Lo que ofrecemos:</h3>
             <ul>
-                <li>Café orgánico 100% puro</li>
-                <li>Sostenible y de comercio justo</li>
-                <li>Apoyamos a los agricultores locales</li>
-                <li>Envío rápido y seguro a toda Bolivia</li>
+                <li><strong>Lápidas Personalizadas:</strong> Diseñamos lápidas que se ajustan a las preferencias de nuestros clientes, trabajando con diferentes estilos y materiales.</li>
+                <li><strong>Monumentos Funerarios:</strong> Creaciones elegantes y duraderas en granito, mármol y otros materiales resistentes para cementerios y mausoleos.</li>
+                <li><strong>Placas Conmemorativas:</strong> Ofrecemos placas en diversos tamaños y acabados, grabadas con precisión y detalle.</li>
+                <li><strong>Accesorios:</strong> Complementos como jarrones, estatuas y adornos que completan la estética del monumento.</li>
             </ul>
-            <button onclick="location.href='/comprar'">Comprar Ahora</button>
+        
+            <h3>Compromiso con la Calidad</h3>
+            <p>En <strong>RAMSES</strong>, trabajamos con dedicación y precisión para ofrecer productos que no solo son visualmente impactantes, sino que también resisten el paso del tiempo. Nuestra experiencia en la manipulación de materiales nobles nos permite garantizar acabados perfectos y diseños personalizados para cada cliente.</p>
+        
+            <p>Confía en <strong>RAMSES</strong> para rendir homenaje a tus seres queridos con dignidad y elegancia.</p>
         </section>
-
-        <section id="testimonios">
-            <h2>Testimonios de nuestros clientes</h2>
-            <blockquote>
-                "El mejor café que he probado. Su sabor es único y su aroma inigualable." - Juan Pérez
-            </blockquote>
-            <blockquote>
-                "Me encanta que apoyen a los agricultores locales mientras ofrecen un producto de calidad." - María Flores
-            </blockquote>
-        </section>
-    </main>
-
+    </div>
+    
     <footer>
         <section id="redes">
             <h2>Síguenos en nuestras redes sociales</h2>
-            <a href="https://facebook.com">Facebook</a> |
-            <a href="https://instagram.com">Instagram</a> |
-            <a href="https://twitter.com">Twitter</a>
+            <a href="https://facebook.com"  ><i class="fa-brands fa-facebook"></i> Facebook</a> |
+            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i> Instagram</a> |
+            <a href="https://twitter.com"> <i class="fa-brands fa-x-twitter"></i> twitter</a>
         </section>
 
-        <p>&copy; 2024 Café Bolivia. Todos los derechos reservados.</p>
+        <p>&copy; 
+            Nuestros monumentos están elaborados con los más altos estándares de calidad, utilizando mármol, granito y otros materiales seleccionados por su resistencia y belleza. Trabajamos cada pieza con detalle y cuidado, asegurando un homenaje digno y duradero.
+        </p>
+        <div>
+            <p>Dirección: Av. Bueno Aires</p>
+            <p>Calle Bautista Sabedra 2024<br>
+            Nuestra Señora de La Paz<br>
+            Bolivia - 2024</p>
+        </div>
     </footer>
 </body>
 </html>
